@@ -2,10 +2,9 @@
 
 
 /**
- *
- * This program prints text to the screen
- * using function 'puts()'
- *
+ * main - Entry point of program prints text to the screen
+ * using function "puts()"
+ * Return: Always 0
  */
 
 int main(void)
