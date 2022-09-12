@@ -3,7 +3,7 @@
  * main - eentry point
  *
  * Description: using the main function
- * this program prints all alphabets in lower case except q and e
+ * this program prints the lowercase alphabet in reverse
  * Return: 0
  */
 int main(void)
