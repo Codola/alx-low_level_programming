@@ -1,0 +1,24 @@
+#include <stdio.h>
+/**
+ * main - eentry point
+ *
+ * Description: using the main function
+ * this program prints the lowercase alphabet in reverse
+ * Return: 0
+ */
+int main(void)
+{
+	char i;
+
+	for (i = '0'; i <= '9'; i++)
+	{
+		putchar(i);		
+	}
+  
+	for (i = 'a'; i <= 'f'; i++)
+	{
+		putchar(i);		
+	}
+	putchar('\n');
+	return (0);
+}
