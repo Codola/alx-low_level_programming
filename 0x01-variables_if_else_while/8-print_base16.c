@@ -3,7 +3,7 @@
  * main - eentry point
  *
  * Description: using the main function
- * this program prints the lowercase alphabet in reverse
+ * this program prints all the numbers of base 16 in lowercase
  * Return: 0
  */
 int main(void)
@@ -12,12 +12,12 @@ int main(void)
 
 	for (i = '0'; i <= '9'; i++)
 	{
-		putchar(i);		
+		putchar(i);
 	}
-  
+	
 	for (i = 'a'; i <= 'f'; i++)
 	{
-		putchar(i);		
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
