@@ -1,29 +1,23 @@
 #include <stdio.h>
-
 /**
- *  main - entry into the program
- * 
- * return - always return 0 for success
- * 
+ * main - eentry point
+ *
+ * Description: using the main function
+ * this program prints all alphabets in lower case except q and e
+ * Return: 0
  */
- 
- int main(void){
+int main(void)
+{
+	char a;
 
-    char alph;
-
-    for (alph = 'a'; alph <= 'z'; alph++)
-    {
-
-        if(alph == 'q' || alph == 'e'){
-
-            alph++;
-
-        }
-        putchar(alph);
-    }
-
-    putchar('\n');
-
-    return(0);
- }
- 
+	for (a = 'a'; a <= 'z' ; a++)
+	{
+		if (a == 'q' || a == 'e')
+		{
+			continue;
+		}
+		putchar(a);
+	}
+	putchar('\n');
+	return (0);
+}
