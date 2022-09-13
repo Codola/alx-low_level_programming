@@ -6,17 +6,20 @@
  * Return: always 0;
  *
  */
-void print_alphabet_x10(void)
+int main(void)
 {
-	char i;
-	char h;
-
-	for (h = 0; h <= 9; h++)
+	void print_alphabet_x10(void)
 	{
-		for (i = 'a'; i <= 'z'; i++)
+		char i;
+		char h;
+
+		for (h = 0; h <= 9; h++)
 		{
-			_putchar(i);
+			for (i = 'a'; i <= 'z'; i++)
+			{
+				_putchar(i);
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
