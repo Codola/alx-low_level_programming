@@ -9,8 +9,6 @@
  * Return: 1 if true, 0 if false
  *
  */
-int main(void)
-{
 	int _islower(int c)
 	{
 		if (c >= 'a' && c <= 'z')
@@ -20,4 +18,3 @@ int main(void)
 		else
 			return (0);
 	}
-}
