@@ -6,19 +6,19 @@
  */
 int main(void)
 {
-	unsigned long factor = 612852475143;
-  unsigned int d = 2;
-  
-	while (d != factor)
+	unsigned int d = 2;
+	unsigned long n = 612852475143;
+
+	while (d != n)
 	{
-		if (factor % d == 0)
+		if (n % d == 0)
 		{
-			factor = factor / d;
+			n = n / d;
 		} else
 		{
 			d++;
 		}
 	}
-	printf("%lu\n", factor);
+	printf("%lu\n", n);
 	return (0);
 }
