@@ -5,7 +5,7 @@
  * @s: string to check
  * Return: boolean
  */
-int Checks(char *s)
+int CheckS(char *s)
 {
 	int i = 0;
 
