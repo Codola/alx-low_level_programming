@@ -1,31 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "3-calc.h"
-#include <string.h>
-
 /**
- * get_op_func - select the correct function to perform an operation
- * @s: the operation to perform
- *
- * Return: If s is not one of the defined operators ('+', '-', '*', '/', '%'),
- * return NULL. Otherwise, return a pointer to the appropriate function.
+ * op_add - adds 5 functions
+ * @a: int a
+ * @b: int b
+ * Return: sum of a and b
  */
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-	int i = 0;
-	op_t ops[] = {
-		{ "+", op_add },
-		{ "-", op_sub },
-		{ "*", op_mul },
-		{ "/", op_div },
-		{ "%", op_mod },
-		{ NULL, NULL }
-	};
+	return (a + b);
+}
+/**
+ * op_sub - subtracts
+ * @a: int a
+ * @b: int b
+ * Return: difference
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+/**
+ * op_mul - multiplies
+ * @a: int a
+ * @b: int b
+ * Return: multipliy
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+/**
+ * op_div - division
+ * @a: int a
+ * @b: int b
+ * Return: division
+ */
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+/**
+ * op_mod - modulos
+ * @a: int a
+ * @b: int b
+ * Return: modulo of ints
+ */
 
-	while (s && ops[i].op != NULL)
-	{
-		if (!strcmp(s, ops[i].op))
-			return (ops[i].f);
-		++i;
-	}
-
-	return (NULL);
+int op_mod(int a, int b)
+{
+	return (a % b);
 }
