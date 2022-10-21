@@ -1,1 +1,1 @@
-linked list
+Exercices in Singly-linked
