@@ -1,1 +1,1 @@
-bit manipulation
+Exercises in Bit Manipulation
